@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>صدای معلمان</title>
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/variables.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/reset.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/base.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/components/buttons.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="teacher-voice.css"
+  />
+</head>
+
+<body>
+  <main class="tlr-voice-page">
+    <div class="tlr-voice-container">
+
+      <a
+        class="tlr-voice-back-link"
+        href="../experience-list/"
+      >
+        بازگشت به تجربه‌های معلمان
+        <span aria-hidden="true">←</span>
+      </a>
+
+      <section class="tlr-voice-hero">
+        <div class="tlr-voice-hero-copy">
+          <span class="tlr-voice-eyebrow">
+            نبض واقعی کلاس‌های درس
+          </span>
+
+          <h1 class="tlr-voice-title">
+            صدای معلمان
+          </h1>
+
+          <p class="tlr-voice-description">
+            دغدغه‌ها و نیازهای واقعی معلمان به‌صورت ناشناس
+            جمع‌آوری، گروه‌بندی و در بازه‌های زمانی مشخص
+            اولویت‌بندی می‌شوند.
+          </p>
+
+          <div class="tlr-voice-actions">
+            <a
+              class="tlr-voice-primary-button"
+              href="../teacher-voice-submit/"
+            >
+              <span aria-hidden="true">＋</span>
+              ثبت ناشناس یک دغدغه
+            </a>
+
+            <a
+              class="tlr-voice-secondary-link"
+              href="#monthlyPriorities"
+            >
+              مشاهده اولویت‌های ماه گذشته
+              <span aria-hidden="true">←</span>
+            </a>
+          </div>
+
+          <p class="tlr-voice-privacy-note">
+            برای ثبت دغدغه نیازی به ساخت حساب، نام یا ایمیل نیست.
+          </p>
+        </div>
+
+        <div
+          class="tlr-voice-hero-visual"
+          aria-hidden="true"
+        >
+          <span class="tlr-voice-wave tlr-voice-wave-one"></span>
+          <span class="tlr-voice-wave tlr-voice-wave-two"></span>
+          <span class="tlr-voice-wave tlr-voice-wave-three"></span>
+
+          <div class="tlr-voice-hero-icon">
+            ◉
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="tlr-voice-period-bar"
+        aria-label="بازه زمانی تحلیل"
+      >
+        <div>
+          <span class="tlr-period-label">
+            گزارش فعال
+          </span>
+
+          <strong>
+            مهم‌ترین دغدغه‌های معلمان در ماه گذشته
+          </strong>
+
+          <p>
+            بر اساس دغدغه‌های ثبت‌شده در یک بازه یک‌ماهه
+          </p>
+        </div>
+
+        <div class="tlr-period-options">
+          <button
+            class="tlr-period-button is-active"
+            type="button"
+          >
+            ماه گذشته
+          </button>
+
+          <button
+            class="tlr-period-button"
+            type="button"
+          >
+            سه ماه گذشته
+          </button>
+
+          <button
+            class="tlr-period-button"
+            type="button"
+          >
+            سال جاری
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="tlr-voice-stat-grid"
+        aria-label="خلاصه آماری"
+      >
+        <article class="tlr-voice-stat-card">
+          <span class="tlr-stat-card-label">
+            دغدغه‌های ثبت‌شده
+          </span>
+
+          <strong class="tlr-stat-card-value">
+            ۱۲۸
+          </strong>
+
+          <span class="tlr-stat-card-change is-positive">
+            ۱۲٪ بیشتر از ماه قبل
+          </span>
+        </article>
+
+        <article class="tlr-voice-stat-card">
+          <span class="tlr-stat-card-label">
+            تم‌های اصلی
+          </span>
+
+          <strong class="tlr-stat-card-value">
+            ۹
+          </strong>
+
+          <span class="tlr-stat-card-change">
+            شناسایی‌شده در تحلیل ماهانه
+          </span>
+        </article>
+
+        <article class="tlr-voice-stat-card">
+          <span class="tlr-stat-card-label">
+            پرتکرارترین دغدغه
+          </span>
+
+          <strong class="tlr-stat-card-title">
+            انگیزش و مشارکت
+          </strong>
+
+          <span class="tlr-stat-card-change">
+            ۳۸ مورد ثبت‌شده
+          </span>
+        </article>
+
+        <article class="tlr-voice-stat-card">
+          <span class="tlr-stat-card-label">
+            بیشترین رشد
+          </span>
+
+          <strong class="tlr-stat-card-title">
+            فشار کاری معلمان
+          </strong>
+
+          <span class="tlr-stat-card-change is-warning">
+            ۲۴٪ افزایش
+          </span>
+        </article>
+      </section>
+
+      <section
+        class="tlr-voice-dashboard-grid"
+        id="monthlyPriorities"
+      >
+        <article class="tlr-voice-panel tlr-priority-panel">
+          <div class="tlr-panel-heading">
+            <div>
+              <span class="tlr-panel-eyebrow">
+                رتبه‌بندی ماهانه
+              </span>
+
+              <h2>
+                مهم‌ترین دغدغه‌های ماه گذشته
+              </h2>
+
+              <p>
+                تعداد دغدغه‌های گروه‌بندی‌شده در هر تم
+              </p>
+            </div>
+
+            <span class="tlr-panel-badge">
+              ۵ تم برتر
+            </span>
+          </div>
+
+          <div class="tlr-horizontal-chart">
+            <div class="tlr-chart-row">
+              <div class="tlr-chart-label">
+                <span>۱</span>
+                <strong>انگیزش و مشارکت دانش‌آموزان</strong>
+              </div>
+
+              <div class="tlr-chart-track">
+                <span
+                  class="tlr-chart-bar"
+                  style="--bar-width: 100%;"
+                ></span>
+              </div>
+
+              <strong class="tlr-chart-value">
+                ۳۸
+              </strong>
+            </div>
+
+            <div class="tlr-chart-row">
+              <div class="tlr-chart-label">
+                <span>۲</span>
+                <strong>مدیریت کلاس</strong>
+              </div>
+
+              <div class="tlr-chart-track">
+                <span
+                  class="tlr-chart-bar"
+                  style="--bar-width: 82%;"
+                ></span>
+              </div>
+
+              <strong class="tlr-chart-value">
+                ۳۱
+              </strong>
+            </div>
+
+            <div class="tlr-chart-row">
+              <div class="tlr-chart-label">
+                <span>۳</span>
+                <strong>کمبود زمان برای تدریس و ارزشیابی</strong>
+              </div>
+
+              <div class="tlr-chart-track">
+                <span
+                  class="tlr-chart-bar"
+                  style="--bar-width: 68%;"
+                ></span>
+              </div>
+
+              <strong class="tlr-chart-value">
+                ۲۶
+              </strong>
+            </div>
+
+            <div class="tlr-chart-row">
+              <div class="tlr-chart-label">
+                <span>۴</span>
+                <strong>فناوری و زیرساخت آموزشی</strong>
+              </div>
+
+              <div class="tlr-chart-track">
+                <span
+                  class="tlr-chart-bar"
+                  style="--bar-width: 50%;"
+                ></span>
+              </div>
+
+              <strong class="tlr-chart-value">
+                ۱۹
+              </strong>
+            </div>
+
+            <div class="tlr-chart-row">
+              <div class="tlr-chart-label">
+                <span>۵</span>
+                <strong>فشار کاری و فرسودگی</strong>
+              </div>
+
+              <div class="tlr-chart-track">
+                <span
+                  class="tlr-chart-bar"
+                  style="--bar-width: 42%;"
+                ></span>
+              </div>
+
+              <strong class="tlr-chart-value">
+                ۱۶
+              </strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="tlr-voice-panel tlr-rising-panel">
+          <div class="tlr-panel-heading">
+            <div>
+              <span class="tlr-panel-eyebrow">
+                تغییر نسبت به ماه قبل
+              </span>
+
+              <h2>
+                دغدغه‌های رو به افزایش
+              </h2>
+            </div>
+          </div>
+
+          <div class="tlr-rising-list">
+            <div class="tlr-rising-item">
+              <div>
+                <strong>
+                  فشار کاری معلمان
+                </strong>
+
+                <span>
+                  ۱۶ مورد در ماه گذشته
+                </span>
+              </div>
+
+              <span class="tlr-rising-value">
+                ↑ ۲۴٪
+              </span>
+            </div>
+
+            <div class="tlr-rising-item">
+              <div>
+                <strong>
+                  مشکلات فناوری آموزشی
+                </strong>
+
+                <span>
+                  ۱۹ مورد در ماه گذشته
+                </span>
+              </div>
+
+              <span class="tlr-rising-value">
+                ↑ ۱۶٪
+              </span>
+            </div>
+
+            <div class="tlr-rising-item">
+              <div>
+                <strong>
+                  بی‌انگیزگی دانش‌آموزان
+                </strong>
+
+                <span>
+                  ۳۸ مورد در ماه گذشته
+                </span>
+              </div>
+
+              <span class="tlr-rising-value">
+                ↑ ۹٪
+              </span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="tlr-voice-lower-grid">
+        <article class="tlr-voice-panel">
+          <div class="tlr-panel-heading">
+            <div>
+              <span class="tlr-panel-eyebrow">
+                روند زمانی
+              </span>
+
+              <h2>
+                تغییر دغدغه‌ها در سه ماه گذشته
+              </h2>
+
+              <p>
+                نمایش نمونه‌ای از روند سه تم پرتکرار
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tlr-trend-chart"
+            role="img"
+            aria-label="نمودار نمونه روند سه‌ماهه دغدغه‌های معلمان"
+          >
+            <div class="tlr-trend-grid">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <svg
+              viewBox="0 0 700 250"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <polyline
+                class="tlr-trend-line tlr-trend-line-one"
+                points="40,175 230,145 420,112 650,70"
+              ></polyline>
+
+              <polyline
+                class="tlr-trend-line tlr-trend-line-two"
+                points="40,120 230,130 420,110 650,98"
+              ></polyline>
+
+              <polyline
+                class="tlr-trend-line tlr-trend-line-three"
+                points="40,190 230,178 420,145 650,125"
+              ></polyline>
+            </svg>
+
+            <div class="tlr-trend-months">
+              <span>سه ماه قبل</span>
+              <span>دو ماه قبل</span>
+              <span>ماه قبل</span>
+              <span>ماه گذشته</span>
+            </div>
+          </div>
+
+          <div class="tlr-trend-legend">
+            <span>
+              <i class="tlr-legend-dot tlr-legend-one"></i>
+              انگیزش و مشارکت
+            </span>
+
+            <span>
+              <i class="tlr-legend-dot tlr-legend-two"></i>
+              مدیریت کلاس
+            </span>
+
+            <span>
+              <i class="tlr-legend-dot tlr-legend-three"></i>
+              فشار کاری
+            </span>
+          </div>
+        </article>
+
+        <article class="tlr-voice-panel">
+          <div class="tlr-panel-heading">
+            <div>
+              <span class="tlr-panel-eyebrow">
+                توزیع اختیاری
+              </span>
+
+              <h2>
+                دغدغه‌ها بر اساس مقطع
+              </h2>
+
+              <p>
+                فقط بر اساس اطلاعات داوطلبانه کاربران
+              </p>
+            </div>
+          </div>
+
+          <div class="tlr-stage-chart">
+            <div class="tlr-stage-circle">
+              <div>
+                <strong>۹۴</strong>
+                <span>پاسخ دارای مقطع</span>
+              </div>
+            </div>
+
+            <div class="tlr-stage-list">
+              <div class="tlr-stage-item">
+                <span class="tlr-stage-name">
+                  دوره ابتدایی
+                </span>
+
+                <div class="tlr-stage-track">
+                  <span style="--stage-width: 45%;"></span>
+                </div>
+
+                <strong>۴۵٪</strong>
+              </div>
+
+              <div class="tlr-stage-item">
+                <span class="tlr-stage-name">
+                  متوسطه اول
+                </span>
+
+                <div class="tlr-stage-track">
+                  <span style="--stage-width: 32%;"></span>
+                </div>
+
+                <strong>۳۲٪</strong>
+              </div>
+
+              <div class="tlr-stage-item">
+                <span class="tlr-stage-name">
+                  متوسطه دوم
+                </span>
+
+                <div class="tlr-stage-track">
+                  <span style="--stage-width: 23%;"></span>
+                </div>
+
+                <strong>۲۳٪</strong>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="tlr-voice-privacy-section">
+        <div class="tlr-privacy-icon" aria-hidden="true">
+          ◌
+        </div>
+
+        <div class="tlr-privacy-content">
+          <span class="tlr-panel-eyebrow">
+            حریم خصوصی در طراحی
+          </span>
+
+          <h2>
+            تمرکز بر دغدغه است، نه هویت معلم
+          </h2>
+
+          <p>
+            برای ثبت دغدغه، نام، ایمیل، شماره تماس یا نام مدرسه
+            دریافت نمی‌شود. اطلاعات زمینه‌ای مانند مقطع یا درس
+            اختیاری است و فقط برای نمایش الگوهای کلی استفاده می‌شود.
+          </p>
+
+          <p>
+            موضوعات با کمک هوش مصنوعی گروه‌بندی می‌شوند،
+            اما اطلاعات قابل‌شناسایی پیش از تحلیل و نمایش حذف
+            یا پنهان خواهند شد.
+          </p>
+        </div>
+
+        <a
+          class="tlr-privacy-action"
+          href="../teacher-voice-submit/"
+        >
+          ثبت ناشناس صدای من
+          <span aria-hidden="true">←</span>
+        </a>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>

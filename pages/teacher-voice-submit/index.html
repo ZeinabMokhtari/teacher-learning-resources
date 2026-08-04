@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>ثبت ناشناس دغدغه</title>
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/variables.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/reset.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/base.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/components/buttons.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="teacher-voice-submit.css"
+  />
+</head>
+
+<body>
+  <main class="tlr-concern-page">
+    <div class="tlr-concern-container">
+
+      <a
+        class="tlr-concern-back-link"
+        href="../teacher-voice/"
+      >
+        بازگشت به صدای معلمان
+        <span aria-hidden="true">←</span>
+      </a>
+
+      <section class="tlr-concern-hero">
+        <div>
+          <span class="tlr-concern-eyebrow">
+            ثبت ناشناس و بدون نیاز به حساب
+          </span>
+
+          <h1>
+            دغدغه خود را با ما در میان بگذارید
+          </h1>
+
+          <p>
+            تمرکز این فرم بر مسئله‌ای است که معلمان تجربه
+            می‌کنند، نه بر هویت فردی آن‌ها.
+          </p>
+        </div>
+
+        <div
+          class="tlr-concern-hero-icon"
+          aria-hidden="true"
+        >
+          ◉
+        </div>
+      </section>
+
+      <div class="tlr-concern-layout">
+
+        <form class="tlr-concern-form">
+
+          <section class="tlr-concern-privacy-banner">
+            <div
+              class="tlr-concern-privacy-icon"
+              aria-hidden="true"
+            >
+              ◌
+            </div>
+
+            <div>
+              <strong>
+                این فرم به‌صورت ناشناس طراحی شده است
+              </strong>
+
+              <p>
+                نام، ایمیل، شماره تماس، نام مدرسه یا اطلاعات
+                مشابه از شما درخواست نمی‌شود.
+              </p>
+            </div>
+          </section>
+
+          <section class="tlr-concern-section">
+            <div class="tlr-concern-section-heading">
+              <span class="tlr-concern-step">
+                ۱
+              </span>
+
+              <div>
+                <h2>
+                  دغدغه اصلی شما
+                </h2>
+
+                <p>
+                  مسئله‌ای را بنویسید که این روزها بیش از همه
+                  ذهن شما را درگیر کرده است.
+                </p>
+              </div>
+            </div>
+
+            <div class="tlr-concern-field">
+              <label for="concern-text">
+                شرح دغدغه
+                <span aria-hidden="true">*</span>
+              </label>
+
+              <textarea
+                id="concern-text"
+                name="concern-text"
+                rows="9"
+                maxlength="1200"
+                placeholder="مثلاً: در کلاس من دانش‌آموزان مشارکت کمی دارند و روش‌های معمول برای فعال‌کردن آن‌ها نتیجه کافی نداشته است..."
+                required
+              ></textarea>
+
+              <div class="tlr-concern-field-note">
+                <span>
+                  لطفاً نام دانش‌آموز، همکار، مدرسه یا اطلاعات
+                  قابل‌شناسایی را وارد نکنید.
+                </span>
+
+                <span>
+                  حداکثر ۱۲۰۰ نویسه
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <section class="tlr-concern-section">
+            <div class="tlr-concern-section-heading">
+              <span class="tlr-concern-step">
+                ۲
+              </span>
+
+              <div>
+                <h2>
+                  موضوع و میزان فوریت
+                </h2>
+
+                <p>
+                  این اطلاعات به گروه‌بندی و اولویت‌بندی بهتر
+                  دغدغه‌ها کمک می‌کند.
+                </p>
+              </div>
+            </div>
+
+            <div class="tlr-concern-grid">
+              <div class="tlr-concern-field">
+                <label for="concern-category">
+                  موضوع دغدغه
+                </label>
+
+                <select
+                  id="concern-category"
+                  name="concern-category"
+                >
+                  <option value="">
+                    ترجیح می‌دهم سیستم تشخیص دهد
+                  </option>
+
+                  <option value="motivation">
+                    انگیزش و مشارکت دانش‌آموزان
+                  </option>
+
+                  <option value="classroom-management">
+                    مدیریت کلاس
+                  </option>
+
+                  <option value="assessment">
+                    ارزشیابی
+                  </option>
+
+                  <option value="workload">
+                    فشار کاری و فرسودگی
+                  </option>
+
+                  <option value="technology">
+                    فناوری و زیرساخت
+                  </option>
+
+                  <option value="curriculum">
+                    برنامه درسی و محتوای آموزشی
+                  </option>
+
+                  <option value="other">
+                    موضوع دیگر
+                  </option>
+                </select>
+              </div>
+
+              <fieldset class="tlr-urgency-fieldset">
+                <legend>
+                  میزان فوریت
+                </legend>
+
+                <div class="tlr-urgency-options">
+                  <label>
+                    <input
+                      type="radio"
+                      name="urgency"
+                      value="important"
+                    />
+
+                    <span>
+                      مهم
+                    </span>
+                  </label>
+
+                  <label>
+                    <input
+                      type="radio"
+                      name="urgency"
+                      value="urgent"
+                    />
+
+                    <span>
+                      فوری
+                    </span>
+                  </label>
+
+                  <label>
+                    <input
+                      type="radio"
+                      name="urgency"
+                      value="very-urgent"
+                    />
+
+                    <span>
+                      بسیار فوری
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </section>
+
+          <section class="tlr-concern-section">
+            <div class="tlr-concern-section-heading">
+              <span class="tlr-concern-step">
+                ۳
+              </span>
+
+              <div>
+                <h2>
+                  اطلاعات زمینه‌ای اختیاری
+                </h2>
+
+                <p>
+                  تکمیل این بخش الزامی نیست و فقط برای شناخت
+                  الگوهای کلی استفاده می‌شود.
+                </p>
+              </div>
+            </div>
+
+            <div class="tlr-concern-grid">
+              <div class="tlr-concern-field">
+                <label for="education-stage">
+                  مقطع تحصیلی
+                  <span class="tlr-optional-label">
+                    اختیاری
+                  </span>
+                </label>
+
+                <select
+                  id="education-stage"
+                  name="education-stage"
+                >
+                  <option value="">
+                    انتخاب نمی‌کنم
+                  </option>
+
+                  <option value="primary">
+                    دوره ابتدایی
+                  </option>
+
+                  <option value="middle">
+                    دوره اول متوسطه
+                  </option>
+
+                  <option value="high">
+                    دوره دوم متوسطه
+                  </option>
+                </select>
+              </div>
+
+              <div class="tlr-concern-field">
+                <label for="grade">
+                  پایه تحصیلی
+                  <span class="tlr-optional-label">
+                    اختیاری
+                  </span>
+                </label>
+
+                <select
+                  id="grade"
+                  name="grade"
+                >
+                  <option value="">
+                    انتخاب نمی‌کنم
+                  </option>
+
+                  <option value="1">پایه اول</option>
+                  <option value="2">پایه دوم</option>
+                  <option value="3">پایه سوم</option>
+                  <option value="4">پایه چهارم</option>
+                  <option value="5">پایه پنجم</option>
+                  <option value="6">پایه ششم</option>
+                  <option value="7">پایه هفتم</option>
+                  <option value="8">پایه هشتم</option>
+                  <option value="9">پایه نهم</option>
+                  <option value="10">پایه دهم</option>
+                  <option value="11">پایه یازدهم</option>
+                  <option value="12">پایه دوازدهم</option>
+                </select>
+              </div>
+
+              <div class="tlr-concern-field">
+                <label for="subject">
+                  درس یا حوزه تدریس
+                  <span class="tlr-optional-label">
+                    اختیاری
+                  </span>
+                </label>
+
+                <input
+                  id="subject"
+                  name="subject"
+                  type="text"
+                  placeholder="مثلاً ریاضی یا علوم"
+                />
+              </div>
+
+              <div class="tlr-concern-field">
+                <label for="province">
+                  استان
+                  <span class="tlr-optional-label">
+                    اختیاری
+                  </span>
+                </label>
+
+                <input
+                  id="province"
+                  name="province"
+                  type="text"
+                  placeholder="می‌توانید خالی بگذارید"
+                />
+              </div>
+            </div>
+
+            <div class="tlr-optional-explanation">
+              اطلاعات این بخش به‌صورت فردی نمایش داده نمی‌شود.
+              در گزارش‌ها فقط الگوهای کلی و گروه‌هایی با تعداد
+              کافی پاسخ نشان داده خواهند شد.
+            </div>
+          </section>
+
+          <section class="tlr-concern-section">
+            <label class="tlr-concern-confirmation">
+              <input
+                type="checkbox"
+                name="privacy-confirmation"
+                required
+              />
+
+              <span>
+                تأیید می‌کنم در متن خود نام اشخاص، مدرسه یا
+                اطلاعات قابل‌شناسایی وارد نکرده‌ام.
+              </span>
+            </label>
+          </section>
+
+          <div class="tlr-concern-actions">
+            <a
+              class="tlr-concern-cancel"
+              href="../teacher-voice/"
+            >
+              انصراف
+            </a>
+
+            <button
+              class="tlr-concern-submit"
+              type="submit"
+            >
+              ثبت ناشناس صدای من
+              <span aria-hidden="true">←</span>
+            </button>
+          </div>
+
+          <p class="tlr-concern-no-account">
+            برای ارسال این فرم نیازی به ساخت حساب نیست.
+          </p>
+        </form>
+
+        <aside class="tlr-concern-sidebar">
+          <section class="tlr-concern-guide-card">
+            <span
+              class="tlr-concern-guide-icon"
+              aria-hidden="true"
+            >
+              ✦
+            </span>
+
+            <h2>
+              چه چیزی بنویسم؟
+            </h2>
+
+            <ul>
+              <li>
+                مسئله‌ای واقعی از تدریس یا محیط آموزشی
+              </li>
+
+              <li>
+                تأثیر مسئله بر کار شما یا یادگیری دانش‌آموزان
+              </li>
+
+              <li>
+                دلیل مهم یا فوری‌بودن این دغدغه
+              </li>
+            </ul>
+          </section>
+
+          <section class="tlr-concern-ai-card">
+            <span class="tlr-concern-ai-label">
+              نحوه استفاده از هوش مصنوعی
+            </span>
+
+            <h2>
+              تحلیل موضوعی، نه ارزیابی معلم
+            </h2>
+
+            <p>
+              هوش مصنوعی برای شناسایی موضوعات مشابه، کدگذاری
+              و محاسبه فراوانی استفاده می‌شود.
+            </p>
+
+            <p>
+              متن شما برای تبلیغات، شناسایی فردی یا ارزیابی
+              عملکرد استفاده نخواهد شد.
+            </p>
+          </section>
+
+          <section class="tlr-concern-data-card">
+            <span class="tlr-concern-data-label">
+              داده‌های جمع‌آوری‌نشده
+            </span>
+
+            <ul>
+              <li>نام و نام خانوادگی</li>
+              <li>ایمیل و شماره تماس</li>
+              <li>نام مدرسه</li>
+              <li>کد پرسنلی</li>
+            </ul>
+          </section>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
