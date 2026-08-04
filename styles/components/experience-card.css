@@ -38,8 +38,26 @@
 .tlr-category-tag { background: var(--tlr-color-primary-soft); color: var(--tlr-color-primary-dark); }
 .tlr-stage-tag { background: var(--tlr-color-secondary-soft); color: var(--tlr-color-secondary-dark); }
 .tlr-reaction-group { display: flex; flex-wrap: wrap; gap: 8px; }
-.tlr-text-button { border: 0; background: transparent; color: var(--tlr-color-secondary); font-size: .78rem; font-weight: 900; cursor: pointer; }
-.tlr-text-button:hover { color: var(--tlr-color-secondary-dark); }
+.tlr-text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  color: var(--tlr-color-secondary);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.tlr-text-button:hover {
+  color: var(--tlr-color-secondary-dark);
+  transform: translateX(-3px);
+}
 
 .tlr-experience-title-link {
   color: inherit;

@@ -121,12 +121,13 @@ function createExperienceCard(experience) {
         aria-label="واکنش به تجربه"
       ></div>
 
-      <button
+      <a
         class="tlr-text-button"
-        type="button"
+        href="../experience-detail/"
       >
-        مشاهده تجربه
-      </button>
+        مشاهده کامل تجربه
+        <span aria-hidden="true">←</span>
+      </a>
     </footer>
   `;
 
