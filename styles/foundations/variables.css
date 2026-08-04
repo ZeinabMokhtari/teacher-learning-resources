@@ -1,0 +1,29 @@
+:root {
+  --tlr-color-primary: #0b8f83;
+  --tlr-color-primary-dark: #075f58;
+  --tlr-color-primary-soft: #def7f2;
+  --tlr-color-secondary: #6757e8;
+  --tlr-color-secondary-dark: #4939bd;
+  --tlr-color-secondary-soft: #eeebff;
+  --tlr-color-accent: #f5b83d;
+  --tlr-color-accent-dark: #b87800;
+  --tlr-color-coral: #f06f61;
+  --tlr-color-blue: #3185fc;
+  --tlr-color-background: #f4f7fc;
+  --tlr-color-surface: #ffffff;
+  --tlr-color-surface-soft: #f9fbfd;
+  --tlr-color-text: #17333d;
+  --tlr-color-text-muted: #647983;
+  --tlr-color-border: #dce7ec;
+  --tlr-color-border-dark: #c8d7dd;
+
+  --tlr-radius-small: 12px;
+  --tlr-radius-medium: 18px;
+  --tlr-radius-large: 26px;
+  --tlr-shadow-soft: 0 10px 30px rgba(23, 51, 61, 0.08);
+  --tlr-shadow-card: 0 18px 48px rgba(23, 51, 61, 0.12);
+  --tlr-gradient-primary: linear-gradient(135deg, #087f73 0%, #19aa9a 100%);
+  --tlr-gradient-feature: linear-gradient(135deg, #6757e8 0%, #3185fc 54%, #20b7a6 100%);
+  --tlr-gradient-reward: linear-gradient(135deg, #f5b83d 0%, #f28b45 100%);
+  --tlr-font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+}

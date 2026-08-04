@@ -1,0 +1,42 @@
+.tlr-experience-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(8,127,115,.11);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: var(--tlr-shadow-soft);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+.tlr-experience-card::before { content: ""; position: absolute; inset: 0 0 auto; height: 5px; background: var(--tlr-gradient-feature); }
+.tlr-experience-card:hover { transform: translateY(-4px); border-color: rgba(103,87,232,.22); box-shadow: var(--tlr-shadow-card); }
+.tlr-experience-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 24px 18px; border-bottom: 1px solid #edf2f4; }
+.tlr-author { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.tlr-avatar { flex: 0 0 auto; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 15px; background: var(--tlr-gradient-primary); color: #fff; box-shadow: 0 9px 20px rgba(8,127,115,.22); }
+.tlr-avatar-icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.tlr-author-name { margin: 0; color: var(--tlr-color-text); font-size: .9rem; font-weight: 900; }
+.tlr-author-meta { margin: 3px 0 0; color: var(--tlr-color-text-muted); font-size: .72rem; }
+.tlr-save-button { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--tlr-color-border); border-radius: 13px; background: #fff; color: var(--tlr-color-text-muted); cursor: pointer; transition: transform 180ms ease, background 180ms ease, color 180ms ease; }
+.tlr-save-button:hover, .tlr-save-button.is-saved { transform: translateY(-2px); background: #ffe9e6; color: var(--tlr-color-coral); border-color: rgba(240,111,97,.22); }
+.tlr-experience-body { padding: 22px 24px 20px; }
+.tlr-experience-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.tlr-category-badge, .tlr-stage-badge { display: inline-flex; padding: 6px 10px; border-radius: 999px; font-size: .7rem; font-weight: 900; }
+.tlr-category-badge { background: var(--tlr-color-primary-soft); color: var(--tlr-color-primary-dark); }
+.tlr-stage-badge { background: var(--tlr-color-secondary-soft); color: var(--tlr-color-secondary-dark); }
+.tlr-experience-title { margin: 0; color: var(--tlr-color-text); font-size: 1.16rem; font-weight: 900; line-height: 1.75; }
+.tlr-experience-summary { margin: 10px 0 0; color: var(--tlr-color-text-muted); font-size: .88rem; line-height: 2; }
+.tlr-keyword-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
+.tlr-keyword { display: inline-flex; padding: 6px 9px; border: 1px solid var(--tlr-color-border); border-radius: 999px; background: var(--tlr-color-surface-soft); color: var(--tlr-color-text-muted); font-size: .68rem; font-weight: 700; }
+.tlr-experience-footer { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 15px 24px 20px; }
+.tlr-read-more { color: var(--tlr-color-secondary); font-size: .78rem; font-weight: 900; text-decoration: none; }
+.tlr-save-count { color: var(--tlr-color-text-muted); font-size: .7rem; }
+@media (max-width: 580px) {
+  .tlr-experience-header, .tlr-experience-body, .tlr-experience-footer { padding-right: 18px; padding-left: 18px; }
+  .tlr-experience-footer { align-items: flex-start; flex-direction: column; }
+}
+.tlr-tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.tlr-category-tag, .tlr-stage-tag { display: inline-flex; padding: 6px 10px; border-radius: 999px; font-size: .7rem; font-weight: 900; }
+.tlr-category-tag { background: var(--tlr-color-primary-soft); color: var(--tlr-color-primary-dark); }
+.tlr-stage-tag { background: var(--tlr-color-secondary-soft); color: var(--tlr-color-secondary-dark); }
+.tlr-reaction-group { display: flex; flex-wrap: wrap; gap: 8px; }
+.tlr-text-button { border: 0; background: transparent; color: var(--tlr-color-secondary); font-size: .78rem; font-weight: 900; cursor: pointer; }
+.tlr-text-button:hover { color: var(--tlr-color-secondary-dark); }
