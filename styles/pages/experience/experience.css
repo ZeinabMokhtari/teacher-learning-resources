@@ -1,0 +1,555 @@
+:root {
+  --color-primary: #087f73;
+  --color-primary-dark: #075f58;
+  --color-primary-light: #d9f5ef;
+
+  --color-purple: #6457d9;
+  --color-purple-light: #ebe9ff;
+
+  --color-gold: #f4b740;
+  --color-gold-light: #fff3cf;
+
+  --color-background: #f3f7fb;
+  --color-surface: #ffffff;
+  --color-text: #18313d;
+  --color-text-soft: #607580;
+  --color-border: #dce7ec;
+
+  --shadow-soft: 0 12px 32px rgba(26, 65, 78, 0.09);
+  --shadow-card: 0 20px 50px rgba(26, 65, 78, 0.13);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  background:
+    radial-gradient(
+      circle at 8% 12%,
+      rgba(100, 87, 217, 0.08),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 92% 20%,
+      rgba(8, 127, 115, 0.08),
+      transparent 24%
+    ),
+    var(--color-background);
+
+  color: var(--color-text);
+  font-family: "Vazirmatn", sans-serif;
+  line-height: 1.9;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.experience-page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 64px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 22px;
+  padding: 9px 14px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--color-primary-dark);
+
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+
+  box-shadow: var(--shadow-soft);
+
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.back-link:hover {
+  transform: translateX(4px);
+  background: var(--color-primary-light);
+}
+
+.experience-hero {
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 38px;
+  align-items: center;
+
+  padding: 44px;
+
+  border: 1px solid rgba(100, 87, 217, 0.15);
+  border-radius: 28px;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(244, 183, 64, 0.22),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #f6f2ff 0%,
+      #eef7ff 48%,
+      #e9fbf7 100%
+    );
+
+  box-shadow: var(--shadow-card);
+}
+
+.experience-hero::after {
+  content: "";
+
+  position: absolute;
+  left: -60px;
+  bottom: -80px;
+
+  width: 200px;
+  height: 200px;
+
+  border: 32px solid rgba(100, 87, 217, 0.07);
+  border-radius: 50%;
+}
+
+.experience-hero-content,
+.experience-score-card {
+  position: relative;
+  z-index: 1;
+}
+
+.experience-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.experience-badge,
+.experience-category {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 13px;
+
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.experience-badge {
+  background: var(--color-gold-light);
+  color: #a76e0a;
+}
+
+.experience-category {
+  background: var(--color-purple-light);
+  color: #493db2;
+}
+
+.experience-title {
+  max-width: 760px;
+  margin: 0;
+
+  color: #163e38;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.experience-summary {
+  max-width: 760px;
+  margin: 20px 0 0;
+
+  color: var(--color-text-soft);
+  font-size: 1.02rem;
+}
+
+.teacher-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 28px;
+}
+
+.teacher-avatar {
+  display: grid;
+  place-items: center;
+
+  width: 52px;
+  height: 52px;
+
+  border: 4px solid rgba(255, 255, 255, 0.78);
+  border-radius: 17px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-purple),
+      #3185fc,
+      #22b8a7
+    );
+
+  color: #ffffff;
+  font-size: 1.3rem;
+
+  box-shadow:
+    0 10px 24px rgba(100, 87, 217, 0.24);
+}
+
+.teacher-info strong {
+  display: block;
+  font-weight: 900;
+}
+
+.teacher-info p {
+  margin: 2px 0 0;
+
+  color: var(--color-text-soft);
+  font-size: 0.83rem;
+}
+
+.experience-score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 24px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+
+  text-align: center;
+
+  box-shadow: var(--shadow-soft);
+}
+
+.score-label {
+  color: var(--color-text-soft);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.score-value {
+  margin-top: 4px;
+
+  color: var(--color-primary-dark);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.score-caption,
+.score-count {
+  color: var(--color-text-soft);
+  font-size: 0.76rem;
+}
+
+.score-stars {
+  margin: 12px 0 8px;
+
+  color: var(--color-gold);
+  font-size: 1.08rem;
+  letter-spacing: 2px;
+}
+
+.experience-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 26px;
+  align-items: start;
+
+  margin-top: 28px;
+}
+
+.experience-content {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.content-card,
+.sidebar-card {
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+
+  background: var(--color-surface);
+
+  box-shadow: var(--shadow-soft);
+}
+
+.content-card {
+  position: relative;
+  overflow: hidden;
+
+  padding: 28px;
+}
+
+.content-card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 6px;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--color-primary),
+      var(--color-purple)
+    );
+}
+
+.content-card h2,
+.sidebar-card h2 {
+  margin: 0 0 14px;
+
+  color: var(--color-text);
+  font-size: 1.18rem;
+  font-weight: 900;
+}
+
+.content-card p {
+  margin: 0;
+  color: var(--color-text-soft);
+}
+
+.experience-steps {
+  display: grid;
+  gap: 12px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  counter-reset: experience-step;
+}
+
+.experience-steps li {
+  position: relative;
+
+  padding: 13px 54px 13px 16px;
+
+  border: 1px solid rgba(8, 127, 115, 0.11);
+  border-radius: 14px;
+
+  background: #f8fcfb;
+  color: var(--color-text-soft);
+
+  counter-increment: experience-step;
+}
+
+.experience-steps li::before {
+  content: counter(experience-step);
+
+  position: absolute;
+  top: 50%;
+  right: 14px;
+
+  display: grid;
+  place-items: center;
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 9px;
+
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+
+  font-size: 0.78rem;
+  font-weight: 900;
+
+  transform: translateY(-50%);
+}
+
+.tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool-list span {
+  padding: 8px 13px;
+
+  border: 1px solid rgba(100, 87, 217, 0.13);
+  border-radius: 999px;
+
+  background: var(--color-purple-light);
+  color: #493db2;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.experience-sidebar {
+  position: sticky;
+  top: 24px;
+
+  display: grid;
+  gap: 18px;
+}
+
+.sidebar-card {
+  padding: 22px;
+}
+
+.experience-details {
+  display: grid;
+  gap: 0;
+
+  margin: 0;
+}
+
+.experience-details div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.experience-details div:last-child {
+  border-bottom: 0;
+}
+
+.experience-details dt {
+  color: var(--color-text-soft);
+  font-size: 0.82rem;
+}
+
+.experience-details dd {
+  margin: 0;
+
+  color: var(--color-text);
+  font-size: 0.84rem;
+  font-weight: 900;
+}
+
+.reward-card {
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(244, 183, 64, 0.2),
+      transparent 36%
+    ),
+    #ffffff;
+}
+
+.reward-icon {
+  display: grid;
+  place-items: center;
+
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 14px;
+
+  border: 6px solid var(--color-gold-light);
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f4b740,
+      #f28c46
+    );
+
+  color: #ffffff;
+  font-size: 1.5rem;
+
+  box-shadow:
+    0 12px 25px rgba(244, 183, 64, 0.28);
+}
+
+.reward-card p {
+  margin: 0;
+
+  color: var(--color-text-soft);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 850px) {
+  .experience-hero {
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+
+  .experience-score-card {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .score-value {
+    font-size: 2rem;
+  }
+
+  .experience-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .experience-page {
+    width: min(100% - 20px, 1180px);
+    padding-top: 18px;
+  }
+
+  .experience-hero {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .content-card,
+  .sidebar-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .teacher-info {
+    align-items: flex-start;
+  }
+}

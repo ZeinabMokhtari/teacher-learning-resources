@@ -2,229 +2,230 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="سامانه اشتراک تجربه‌های حرفه‌ای معلمان" />
-    <title>تجربه‌های معلمان</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="مشاهده جزئیات یک تجربه آموزشی از معلمان"
+    />
+
+    <title>جزئیات تجربه آموزشی</title>
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../../styles/foundations/variables.css" />
-    <link rel="stylesheet" href="../../styles/foundations/reset.css" />
-    <link rel="stylesheet" href="../../styles/foundations/base.css" />
-    <link rel="stylesheet" href="../../styles/components/buttons.css" />
-    <link rel="stylesheet" href="../../styles/components/filters.css" />
-    <link rel="stylesheet" href="../../styles/components/experience-card.css" />
-    <link rel="stylesheet" href="../../styles/components/reaction-bar.css" />
-    <link rel="stylesheet" href="../../styles/components/teacher-ranking.css" />
-    <link rel="stylesheet" href="../../styles/pages/experiences.css" />
+    <link
+      rel="stylesheet"
+      href="experience.css"
+    />
   </head>
 
   <body>
-    <main class="tlr-module" aria-labelledby="tlrPageTitle">
-      <section class="tlr-hero" aria-labelledby="tlrPageTitle">
-        <div class="tlr-hero-orb tlr-hero-orb-one" aria-hidden="true"></div>
-        <div class="tlr-hero-orb tlr-hero-orb-two" aria-hidden="true"></div>
+  <main class="experience-page">
+    <a
+      class="back-link"
+      href="../experiences/"
+    >
+      <span aria-hidden="true">→</span>
+      بازگشت به تجربه‌ها
+    </a>
 
-        <div class="tlr-hero-copy">
-          <p class="tlr-hero-eyebrow">
-            <span aria-hidden="true">✦</span>
-            جامعه یادگیری حرفه‌ای معلمان
-          </p>
+    <section class="experience-hero">
+      <div class="experience-hero-content">
+        <div class="experience-labels">
+          <span class="experience-badge">
+            تجربه منتخب
+          </span>
 
-          <h1 class="tlr-hero-title" id="tlrPageTitle">تجربه‌های معلمان</h1>
-
-          <p class="tlr-hero-description">
-            تجربه‌های واقعی، راهکارهای خلاقانه و ایده‌های قابل‌استفاده در کلاس درس
-          </p>
-
-          <div class="tlr-hero-actions">
-            <button class="tlr-primary-button" type="button">
-              <span aria-hidden="true">＋</span>
-              ثبت تجربه
-            </button>
-
-            <a class="tlr-text-link" href="#experienceListTitle">
-              مشاهده تجربه‌ها
-              <span aria-hidden="true">←</span>
-            </a>
-          </div>
+          <span class="experience-category">
+            تدریس خلاقانه
+          </span>
         </div>
 
-        <div class="tlr-hero-stats" aria-label="آمار جامعه معلمان">
-          <article class="tlr-stat-card">
-            <span class="tlr-stat-icon" aria-hidden="true">✎</span>
-            <div>
-              <strong>۲۴۸</strong>
-              <span>تجربه آموزشی</span>
-            </div>
-          </article>
+        <h1 class="experience-title">
+          آموزش کسرها با بازارچه کوچک کلاسی
+        </h1>
 
-          <article class="tlr-stat-card">
-            <span class="tlr-stat-icon" aria-hidden="true">◎</span>
-            <div>
-              <strong>۱۱۲</strong>
-              <span>معلم مشارکت‌کننده</span>
-            </div>
-          </article>
+        <p class="experience-summary">
+          در این تجربه، دانش‌آموزان با استفاده از پول‌های کاغذی،
+          برچسب قیمت و خریدوفروش گروهی، مفهوم کسرها را به‌صورت
+          عملی و مشارکتی یاد گرفتند.
+        </p>
 
-          <article class="tlr-stat-card">
-            <span class="tlr-stat-icon" aria-hidden="true">♥</span>
-            <div>
-              <strong>۱٬۸۶۰</strong>
-              <span>واکنش حرفه‌ای</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="tlr-weekly-challenge" aria-labelledby="weeklyChallengeTitle">
-        <div class="tlr-challenge-icon" aria-hidden="true">★</div>
-
-        <div class="tlr-challenge-copy">
-          <p class="tlr-challenge-label">چالش این هفته</p>
-          <h2 id="weeklyChallengeTitle">
-            یک راهکار خلاقانه برای مشارکت بیشتر دانش‌آموزان به اشتراک بگذارید
-          </h2>
-          <p>
-            با ثبت یک تجربه مرتبط، امتیاز مشارکت دریافت کنید و نشان «کلاس پویا» را به دست آورید.
-          </p>
-
-          <div class="tlr-progress-meta">
-            <span>۳۴ تجربه از هدف ۵۰ تجربه</span>
-            <strong>۶۸٪</strong>
+        <div class="teacher-info">
+          <div
+            class="teacher-avatar"
+            aria-hidden="true"
+          >
+            ✦
           </div>
-          <div class="tlr-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="68">
-            <span style="width: 68%"></span>
-          </div>
-        </div>
 
-        <div class="tlr-challenge-reward">
-          <span class="tlr-reward-medal" aria-hidden="true">✦</span>
           <div>
-            <strong>نشان کلاس پویا</strong>
-            <span>پاداش این چالش</span>
+            <strong>
+              مریم احمدی
+            </strong>
+
+            <p>
+              آموزگار پایه پنجم · اصفهان
+            </p>
           </div>
-          <button class="tlr-secondary-button" type="button">شرکت در چالش</button>
         </div>
-      </section>
+      </div>
 
-      <section class="tlr-search-panel" aria-label="جست‌وجو و فیلتر تجربه‌ها">
-        <div class="tlr-search-box">
-          <span class="tlr-search-icon" aria-hidden="true">⌕</span>
-          <label class="tlr-visually-hidden" for="experienceSearch">جست‌وجو در تجربه‌ها</label>
-          <input
-            id="experienceSearch"
-            type="search"
-            placeholder="جست‌وجو در عنوان، متن یا کلیدواژه‌ها..."
-            autocomplete="off"
-          />
+      <aside class="experience-score-card">
+        <span class="score-label">
+          امتیاز این تجربه
+        </span>
+
+        <strong class="score-value">
+          ۴.۸
+        </strong>
+
+        <span class="score-caption">
+          از ۵ امتیاز
+        </span>
+
+        <div class="score-stars" aria-label="۴.۸ از ۵">
+          ★ ★ ★ ★ ★
         </div>
 
-        <div class="tlr-filter-grid">
-          <label class="tlr-field">
-            <span>دوره تحصیلی</span>
-            <select id="stageFilter">
-              <option value="all">همه دوره‌ها</option>
-              <option value="primary">دوره ابتدایی</option>
-              <option value="middle">دوره اول متوسطه</option>
-              <option value="high">دوره دوم متوسطه</option>
-            </select>
-          </label>
+        <span class="score-count">
+          بر اساس ۱۲۶ واکنش
+        </span>
+      </aside>
+    </section>
 
-          <label class="tlr-field">
-            <span>پایه</span>
-            <select id="gradeFilter">
-              <option value="all">همه پایه‌ها</option>
-            </select>
-          </label>
+    <div class="experience-layout">
+      <article class="experience-content">
+        <section class="content-card">
+          <h2>
+            مسئله چه بود؟
+          </h2>
 
-          <label class="tlr-field">
-            <span>حوزه تجربه</span>
-            <select id="categoryFilter">
-              <option value="all">همه حوزه‌ها</option>
-              <option value="creative-teaching">تدریس خلاقانه</option>
-              <option value="assessment">ارزشیابی</option>
-              <option value="classroom-management">مدیریت کلاس</option>
-              <option value="educational-technology">فناوری آموزشی</option>
-              <option value="collaborative-learning">یادگیری مشارکتی</option>
-            </select>
-          </label>
-
-          <label class="tlr-field">
-            <span>مرتب‌سازی</span>
-            <select id="sortFilter">
-              <option value="newest">جدیدترین</option>
-              <option value="most-reacted">بیشترین واکنش</option>
-              <option value="most-saved">بیشترین ذخیره</option>
-            </select>
-          </label>
-        </div>
-      </section>
-
-      <div class="tlr-content-layout">
-        <section class="tlr-feed" aria-labelledby="experienceListTitle">
-          <div class="tlr-section-header">
-            <div>
-              <p class="tlr-section-kicker">تازه‌ترین ایده‌ها از کلاس‌های واقعی</p>
-              <h2 class="tlr-section-title" id="experienceListTitle">تجربه‌های تازه</h2>
-            </div>
-            <p class="tlr-result-count" id="resultCount">در حال بارگذاری تجربه‌ها...</p>
-          </div>
-
-          <div class="tlr-experience-list" id="experienceList"></div>
-
-          <div class="tlr-empty-state" id="emptyState" hidden>
-            <h3>تجربه‌ای پیدا نشد</h3>
-            <p>عبارت جست‌وجو یا فیلترها را تغییر دهید.</p>
-          </div>
+          <p>
+            بسیاری از دانش‌آموزان می‌توانستند کسرها را روی کاغذ
+            محاسبه کنند، اما درک روشنی از کاربرد آن‌ها در موقعیت‌های
+            واقعی نداشتند.
+          </p>
         </section>
 
-        <aside class="tlr-sidebar">
-          <section class="tlr-ranking-card" aria-labelledby="rankingTitle">
-            <div class="tlr-ranking-heading">
-              <p class="tlr-card-kicker">برگزیدگان جامعه</p>
-              <h2 class="tlr-card-title" id="rankingTitle">معلمان الهام‌بخش این ماه</h2>
+        <section class="content-card">
+          <h2>
+            روش اجرا
+          </h2>
+
+          <ol class="experience-steps">
+            <li>
+              کلاس به گروه‌های سه‌نفره تقسیم شد.
+            </li>
+
+            <li>
+              هر گروه یک غرفه کوچک با چند کالای ساده طراحی کرد.
+            </li>
+
+            <li>
+              قیمت کالاها به‌صورت کسر نوشته شد.
+            </li>
+
+            <li>
+              دانش‌آموزان نقش خریدار و فروشنده را جابه‌جا کردند.
+            </li>
+
+            <li>
+              در پایان، هر گروه شیوه محاسبه خود را توضیح داد.
+            </li>
+          </ol>
+        </section>
+
+        <section class="content-card">
+          <h2>
+            نتیجه تجربه
+          </h2>
+
+          <p>
+            مشارکت دانش‌آموزان بیشتر شد و آن‌ها توانستند مفهوم
+            کسر را به موقعیت‌های روزمره پیوند دهند. دانش‌آموزانی
+            که در فعالیت‌های معمول کمتر مشارکت می‌کردند نیز نقش
+            فعال‌تری داشتند.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>
+            ابزارهای موردنیاز
+          </h2>
+
+          <div class="tool-list">
+            <span>پول کاغذی</span>
+            <span>برچسب قیمت</span>
+            <span>کارت محصول</span>
+            <span>کاغذ رنگی</span>
+          </div>
+        </section>
+      </article>
+
+      <aside class="experience-sidebar">
+        <section class="sidebar-card">
+          <h2>
+            مشخصات تجربه
+          </h2>
+
+          <dl class="experience-details">
+            <div>
+              <dt>دوره تحصیلی</dt>
+              <dd>ابتدایی</dd>
             </div>
-            <ol class="tlr-ranking-list" id="teacherRanking"></ol>
-            <p class="tlr-ranking-note">رتبه‌بندی بر پایه واکنش‌های حرفه‌ای جامعه به تجربه‌هاست.</p>
-          </section>
 
-          <section class="tlr-badges-card" aria-labelledby="badgesTitle">
-            <p class="tlr-card-kicker">نشان‌های حرفه‌ای</p>
-            <h2 class="tlr-card-title" id="badgesTitle">تقدیر از مشارکت و اثرگذاری</h2>
-            <p class="tlr-badges-description">
-              نشان‌ها با استمرار در اشتراک تجربه، دریافت واکنش و مشارکت در چالش‌ها به دست می‌آیند.
-            </p>
-
-            <div class="tlr-badge-list">
-              <div class="tlr-badge-item">
-                <span class="tlr-badge-icon tlr-badge-icon-gold" aria-hidden="true">✦</span>
-                <div><strong>نوآوری در تدریس</strong><span>برای ایده‌های خلاقانه</span></div>
-              </div>
-              <div class="tlr-badge-item">
-                <span class="tlr-badge-icon tlr-badge-icon-purple" aria-hidden="true">◆</span>
-                <div><strong>الهام‌بخش جامعه</strong><span>برای اثرگذاری گسترده</span></div>
-              </div>
-              <div class="tlr-badge-item">
-                <span class="tlr-badge-icon tlr-badge-icon-teal" aria-hidden="true">✓</span>
-                <div><strong>مشارکت پایدار</strong><span>برای تداوم حضور حرفه‌ای</span></div>
-              </div>
+            <div>
+              <dt>پایه</dt>
+              <dd>پنجم</dd>
             </div>
-          </section>
-        </aside>
-      </div>
-    </main>
 
-    <script src="../../scripts/data/experiences-data.js"></script>
-    <script src="../../scripts/components/reaction-bar.js"></script>
-    <script src="../../scripts/components/experience-card.js"></script>
-    <script src="../../scripts/components/filters.js"></script>
-    <script src="../../scripts/components/teacher-ranking.js"></script>
-    <script src="../../scripts/pages/experiences-page.js"></script>
-  </body>
+            <div>
+              <dt>درس</dt>
+              <dd>ریاضی</dd>
+            </div>
+
+            <div>
+              <dt>زمان اجرا</dt>
+              <dd>۴۵ دقیقه</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="sidebar-card reward-card">
+          <span class="reward-icon" aria-hidden="true">
+            ✦
+          </span>
+
+          <h2>
+            نشان تجربه الهام‌بخش
+          </h2>
+
+          <p>
+            این تجربه به‌دلیل کاربردپذیری و مشارکت بالای
+            دانش‌آموزان این نشان را دریافت کرده است.
+          </p>
+        </section>
+      </aside>
+    </div>
+  </main>
+</body>
 </html>
