@@ -35,7 +35,23 @@ function createExperienceCard(experience) {
           class="tlr-avatar"
           aria-hidden="true"
         >
-          ${getTeacherInitials(experience.author)}
+          <svg
+            class="tlr-avatar-icon"
+            viewBox="0 0 24 24"
+            focusable="false"
+          >
+            <path
+              d="M4 5.5C4 4.67 4.67 4 5.5 4H11V19H5.5C4.67 19 4 18.33 4 17.5V5.5Z"
+            ></path>
+
+            <path
+              d="M20 5.5C20 4.67 19.33 4 18.5 4H13V19H18.5C19.33 19 20 18.33 20 17.5V5.5Z"
+            ></path>
+
+            <path
+              d="M12 6.5L16.5 2L18 3.5L13.5 8L11 8.5L12 6.5Z"
+            ></path>
+          </svg>
         </div>
 
         <div>

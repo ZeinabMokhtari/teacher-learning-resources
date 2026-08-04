@@ -59,6 +59,17 @@
   font-weight: 800;
 }
 
+.tlr-avatar-icon {
+  width: 24px;
+  height: 24px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .tlr-author-name {
   font-size: 0.95rem;
 }
