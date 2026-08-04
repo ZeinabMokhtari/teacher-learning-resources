@@ -40,3 +40,15 @@
 .tlr-reaction-group { display: flex; flex-wrap: wrap; gap: 8px; }
 .tlr-text-button { border: 0; background: transparent; color: var(--tlr-color-secondary); font-size: .78rem; font-weight: 900; cursor: pointer; }
 .tlr-text-button:hover { color: var(--tlr-color-secondary-dark); }
+
+.tlr-experience-title-link {
+  color: inherit;
+  text-decoration: none;
+
+  transition:
+    color 180ms ease;
+}
+
+.tlr-experience-title-link:hover {
+  color: var(--tlr-color-secondary-dark);
+}

@@ -90,7 +90,12 @@ function createExperienceCard(experience) {
       </div>
 
       <h2 class="tlr-experience-title">
-        ${experience.title}
+        <a
+          class="tlr-experience-title-link"
+          href="../experience-detail/"
+        >
+          ${experience.title}
+        </a>
       </h2>
 
       <p class="tlr-experience-summary">
