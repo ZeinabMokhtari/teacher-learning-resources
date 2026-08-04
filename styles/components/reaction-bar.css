@@ -1,0 +1,44 @@
+.tlr-reaction-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tlr-reaction-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  padding: 7px 10px;
+
+  border: 1px solid var(--tlr-color-border);
+  border-radius: 999px;
+
+  background-color: var(--tlr-color-surface);
+  color: var(--tlr-color-text-muted);
+
+  font-size: 0.78rem;
+
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease,
+    transform 150ms ease;
+}
+
+.tlr-reaction-button:hover,
+.tlr-reaction-button.is-active {
+  border-color: var(--tlr-color-accent);
+  background-color: var(--tlr-color-accent-soft);
+  transform: translateY(-1px);
+}
+
+.tlr-reaction-button strong {
+  color: var(--tlr-color-primary);
+}
+
+@media (max-width: 680px) {
+  .tlr-reaction-button {
+    flex: 1 1 calc(50% - 8px);
+  }
+}

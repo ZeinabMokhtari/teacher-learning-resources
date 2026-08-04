@@ -1,0 +1,97 @@
+.tlr-ranking-card,
+.tlr-recognition-card {
+  padding: 20px;
+
+  border: 1px solid var(--tlr-color-border);
+  border-radius: var(--tlr-radius-large);
+
+  background-color: var(--tlr-color-surface);
+  box-shadow: var(--tlr-shadow-small);
+}
+
+.tlr-ranking-list {
+  display: grid;
+  gap: 12px;
+
+  margin-top: 18px;
+
+  list-style: none;
+}
+
+.tlr-ranking-item {
+  display: grid;
+  grid-template-columns: 28px 40px 1fr auto;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px;
+
+  border-radius: 14px;
+
+  background-color: var(--tlr-color-surface-soft);
+}
+
+.tlr-rank-number {
+  color: var(--tlr-color-accent);
+  font-weight: 800;
+}
+
+.tlr-ranking-avatar {
+  display: grid;
+  place-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background-color: var(--tlr-color-primary);
+  color: #ffffff;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.tlr-ranking-name {
+  font-size: 0.86rem;
+}
+
+.tlr-ranking-meta {
+  margin-top: 3px;
+
+  color: var(--tlr-color-text-muted);
+  font-size: 0.72rem;
+}
+
+.tlr-ranking-score {
+  color: var(--tlr-color-secondary);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.tlr-recognition-card p {
+  margin-top: 10px;
+
+  color: var(--tlr-color-text-muted);
+  line-height: 1.8;
+}
+
+.tlr-badge-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 16px;
+}
+
+.tlr-badge-preview span {
+  padding: 7px 10px;
+
+  border-radius: 999px;
+
+  background-color: var(--tlr-color-accent-soft);
+  color: #805b1d;
+
+  font-size: 0.75rem;
+  font-weight: 800;
+}

@@ -1,0 +1,49 @@
+.tlr-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 48px;
+  padding: 10px 20px;
+
+  border: 0;
+  border-radius: 14px;
+
+  background-color: var(--tlr-color-primary);
+  color: #ffffff;
+
+  font-weight: 800;
+
+  box-shadow: var(--tlr-shadow-small);
+
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.tlr-primary-button:hover {
+  background-color: var(--tlr-color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.tlr-primary-button:focus-visible {
+  outline: 3px solid rgba(47, 127, 117, 0.3);
+  outline-offset: 3px;
+}
+
+.tlr-text-button {
+  border: 0;
+  padding: 6px;
+
+  background: transparent;
+  color: var(--tlr-color-secondary);
+
+  font-weight: 800;
+}
+
+@media (max-width: 680px) {
+  .tlr-primary-button {
+    width: 100%;
+  }
+}

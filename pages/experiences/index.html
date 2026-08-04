@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="سامانه اشتراک تجربه‌های حرفه‌ای معلمان"
+    />
+
+    <title>تجربه‌های معلمان</title>
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/foundations/variables.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/foundations/reset.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/foundations/base.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/components/buttons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/components/filters.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/components/experience-card.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/components/reaction-bar.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/components/teacher-ranking.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/pages/experiences.css"
+    />
+  </head>
+
+  <body>
+    <main
+      class="tlr-module"
+      aria-labelledby="tlrPageTitle"
+    >
+      <header class="tlr-page-header">
+        <div class="tlr-page-heading">
+          <p class="tlr-eyebrow">
+            جامعه یادگیری حرفه‌ای معلمان
+          </p>
+
+          <h1
+            class="tlr-page-title"
+            id="tlrPageTitle"
+          >
+            تجربه‌های معلمان
+          </h1>
+
+          <p class="tlr-page-description">
+            تجربه‌های واقعی، راهکارهای
+            خلاقانه و ایده‌های قابل‌استفاده
+            در کلاس درس
+          </p>
+        </div>
+
+        <button
+          class="tlr-primary-button"
+          type="button"
+        >
+          <span aria-hidden="true">
+            ＋
+          </span>
+
+          ثبت تجربه
+        </button>
+      </header>
+
+      <section
+        class="tlr-search-panel"
+        aria-label="جست‌وجو و فیلتر تجربه‌ها"
+      >
+        <div class="tlr-search-box">
+          <span
+            class="tlr-search-icon"
+            aria-hidden="true"
+          >
+            ⌕
+          </span>
+
+          <label
+            class="tlr-visually-hidden"
+            for="experienceSearch"
+          >
+            جست‌وجو در تجربه‌ها
+          </label>
+
+          <input
+            id="experienceSearch"
+            type="search"
+            placeholder="جست‌وجو در عنوان، متن یا کلیدواژه‌ها..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="tlr-filter-grid">
+          <label class="tlr-field">
+            <span>دوره تحصیلی</span>
+
+            <select id="stageFilter">
+              <option value="all">
+                همه دوره‌ها
+              </option>
+
+              <option value="primary">
+                دوره ابتدایی
+              </option>
+
+              <option value="middle">
+                دوره اول متوسطه
+              </option>
+
+              <option value="high">
+                دوره دوم متوسطه
+              </option>
+            </select>
+          </label>
+
+          <label class="tlr-field">
+            <span>پایه</span>
+
+            <select id="gradeFilter">
+              <option value="all">
+                همه پایه‌ها
+              </option>
+            </select>
+          </label>
+
+          <label class="tlr-field">
+            <span>حوزه تجربه</span>
+
+            <select id="categoryFilter">
+              <option value="all">
+                همه حوزه‌ها
+              </option>
+
+              <option value="creative-teaching">
+                تدریس خلاقانه
+              </option>
+
+              <option value="assessment">
+                ارزشیابی
+              </option>
+
+              <option value="classroom-management">
+                مدیریت کلاس
+              </option>
+
+              <option value="educational-technology">
+                فناوری آموزشی
+              </option>
+
+              <option value="collaborative-learning">
+                یادگیری مشارکتی
+              </option>
+            </select>
+          </label>
+
+          <label class="tlr-field">
+            <span>مرتب‌سازی</span>
+
+            <select id="sortFilter">
+              <option value="newest">
+                جدیدترین
+              </option>
+
+              <option value="most-reacted">
+                بیشترین واکنش
+              </option>
+
+              <option value="most-saved">
+                بیشترین ذخیره
+              </option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <div class="tlr-content-layout">
+        <section
+          aria-labelledby="experienceListTitle"
+        >
+          <div class="tlr-section-header">
+            <h2
+              class="tlr-section-title"
+              id="experienceListTitle"
+            >
+              تجربه‌های تازه
+            </h2>
+
+            <p
+              class="tlr-section-description"
+              id="resultCount"
+            >
+              در حال بارگذاری تجربه‌ها...
+            </p>
+          </div>
+
+          <div
+            class="tlr-experience-list"
+            id="experienceList"
+          ></div>
+
+          <div
+            class="tlr-empty-state"
+            id="emptyState"
+            hidden
+          >
+            <h3>
+              تجربه‌ای پیدا نشد
+            </h3>
+
+            <p>
+              عبارت جست‌وجو یا فیلترها را
+              تغییر دهید.
+            </p>
+          </div>
+        </section>
+
+        <aside class="tlr-sidebar">
+          <section class="tlr-ranking-card">
+            <p class="tlr-card-kicker">
+              برگزیدگان جامعه
+            </p>
+
+            <h2 class="tlr-card-title">
+              معلمان الهام‌بخش این ماه
+            </h2>
+
+            <ol
+              class="tlr-ranking-list"
+              id="teacherRanking"
+            ></ol>
+          </section>
+
+          <section class="tlr-recognition-card">
+            <p class="tlr-card-kicker">
+              نشان‌های حرفه‌ای
+            </p>
+
+            <h2 class="tlr-card-title">
+              تقدیر از مشارکت و اثرگذاری
+            </h2>
+
+            <p>
+              نشان‌ها بر اساس استمرار
+              مشارکت، بازخورد جامعه معلمان
+              و ارزیابی تخصصی اعطا می‌شوند.
+            </p>
+
+            <div class="tlr-badge-preview">
+              <span>
+                نوآوری در تدریس
+              </span>
+
+              <span>
+                تجربه الهام‌بخش
+              </span>
+
+              <span>
+                مشارکت پایدار
+              </span>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <script
+      src="../../scripts/data/experiences-data.js"
+    ></script>
+
+    <script
+      src="../../scripts/components/reaction-bar.js"
+    ></script>
+
+    <script
+      src="../../scripts/components/experience-card.js"
+    ></script>
+
+    <script
+      src="../../scripts/components/filters.js"
+    ></script>
+
+    <script
+      src="../../scripts/components/teacher-ranking.js"
+    ></script>
+
+    <script
+      src="../../scripts/pages/experiences-page.js"
+    ></script>
+  </body>
+</html>
