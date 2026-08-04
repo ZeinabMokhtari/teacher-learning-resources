@@ -40,6 +40,3 @@ Clone or download the repository, then open `index.html` in a browser. The compo
 ## Status
 
 This project is currently under development.
-
-بعداً فقط بخش `Project Structure` و `Usage` را بر اساس فایل‌های واقعی پروژه دقیق‌تر می‌کنیم.
-# teacher-learning-resources
