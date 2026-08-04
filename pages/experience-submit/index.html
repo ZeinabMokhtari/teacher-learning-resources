@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>ثبت تجربه آموزشی</title>
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/variables.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/reset.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/foundations/base.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../styles/components/buttons.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="experience-submit.css"
+  />
+</head>
+
+<body>
+  <main class="tlr-submit-page">
+    <div class="tlr-submit-container">
+
+      <a
+        class="tlr-submit-back-link"
+        href="../experience-list/"
+      >
+        بازگشت به تجربه‌ها
+        <span aria-hidden="true">←</span>
+      </a>
+
+      <section class="tlr-submit-hero">
+        <div class="tlr-submit-hero-content">
+          <span class="tlr-submit-eyebrow">
+            تجربه شما می‌تواند الهام‌بخش باشد
+          </span>
+
+          <h1 class="tlr-submit-title">
+            تجربه آموزشی خود را به اشتراک بگذارید
+          </h1>
+
+          <p class="tlr-submit-description">
+            یک تجربه واقعی از کلاس درس خود ثبت کنید تا
+            سایر معلمان نیز بتوانند از روش‌ها، چالش‌ها و
+            آموخته‌های شما استفاده کنند.
+          </p>
+        </div>
+
+        <div
+          class="tlr-submit-hero-icon"
+          aria-hidden="true"
+        >
+          ✦
+        </div>
+      </section>
+
+      <div class="tlr-submit-layout">
+
+        <form class="tlr-submit-form">
+
+          <section class="tlr-form-section">
+            <div class="tlr-form-section-heading">
+              <span class="tlr-form-step">۱</span>
+
+              <div>
+                <h2>اطلاعات اصلی تجربه</h2>
+
+                <p>
+                  ابتدا عنوان و توضیح کوتاهی درباره تجربه
+                  خود وارد کنید.
+                </p>
+              </div>
+            </div>
+
+            <div class="tlr-form-grid">
+              <div class="tlr-form-field tlr-form-field-full">
+                <label for="experience-title">
+                  عنوان تجربه
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="experience-title"
+                  name="experience-title"
+                  type="text"
+                  maxlength="80"
+                  placeholder="مثلاً آموزش کسرها با بازارچه کلاسی"
+                  required
+                />
+
+                <small>
+                  عنوان را روشن، مشخص و حداکثر در ۱۰ کلمه
+                  بنویسید.
+                </small>
+              </div>
+
+              <div class="tlr-form-field tlr-form-field-full">
+                <label for="experience-summary">
+                  خلاصه تجربه
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <textarea
+                  id="experience-summary"
+                  name="experience-summary"
+                  rows="4"
+                  maxlength="300"
+                  placeholder="در چند جمله توضیح دهید این تجربه درباره چه بود و چه نتیجه‌ای داشت."
+                  required
+                ></textarea>
+
+                <small>
+                  حداکثر ۳۰۰ نویسه
+                </small>
+              </div>
+            </div>
+          </section>
+
+          <section class="tlr-form-section">
+            <div class="tlr-form-section-heading">
+              <span class="tlr-form-step">۲</span>
+
+              <div>
+                <h2>مقطع و حوزه آموزشی</h2>
+
+                <p>
+                  مشخص کنید این تجربه در چه مقطع، پایه و
+                  حوزه‌ای اجرا شده است.
+                </p>
+              </div>
+            </div>
+
+            <div class="tlr-form-grid">
+              <div class="tlr-form-field">
+                <label for="education-stage">
+                  مقطع تحصیلی
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <select
+                  id="education-stage"
+                  name="education-stage"
+                  required
+                >
+                  <option value="">
+                    انتخاب مقطع
+                  </option>
+
+                  <option value="primary">
+                    دوره ابتدایی
+                  </option>
+
+                  <option value="middle">
+                    دوره اول متوسطه
+                  </option>
+
+                  <option value="high">
+                    دوره دوم متوسطه
+                  </option>
+                </select>
+              </div>
+
+              <div class="tlr-form-field">
+                <label for="grade">
+                  پایه تحصیلی
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <select
+                  id="grade"
+                  name="grade"
+                  required
+                >
+                  <option value="">
+                    انتخاب پایه
+                  </option>
+
+                  <option value="1">پایه اول</option>
+                  <option value="2">پایه دوم</option>
+                  <option value="3">پایه سوم</option>
+                  <option value="4">پایه چهارم</option>
+                  <option value="5">پایه پنجم</option>
+                  <option value="6">پایه ششم</option>
+                  <option value="7">پایه هفتم</option>
+                  <option value="8">پایه هشتم</option>
+                  <option value="9">پایه نهم</option>
+                  <option value="10">پایه دهم</option>
+                  <option value="11">پایه یازدهم</option>
+                  <option value="12">پایه دوازدهم</option>
+                </select>
+              </div>
+
+              <div class="tlr-form-field">
+                <label for="subject">
+                  درس یا حوزه
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="subject"
+                  name="subject"
+                  type="text"
+                  placeholder="مثلاً ریاضی، علوم یا ادبیات"
+                  required
+                />
+              </div>
+
+              <div class="tlr-form-field">
+                <label for="category">
+                  دسته‌بندی تجربه
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <select
+                  id="category"
+                  name="category"
+                  required
+                >
+                  <option value="">
+                    انتخاب دسته‌بندی
+                  </option>
+
+                  <option value="creative-teaching">
+                    تدریس خلاقانه
+                  </option>
+
+                  <option value="assessment">
+                    ارزشیابی
+                  </option>
+
+                  <option value="classroom-management">
+                    مدیریت کلاس
+                  </option>
+
+                  <option value="educational-technology">
+                    فناوری آموزشی
+                  </option>
+
+                  <option value="collaborative-learning">
+                    یادگیری مشارکتی
+                  </option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section class="tlr-form-section">
+            <div class="tlr-form-section-heading">
+              <span class="tlr-form-step">۳</span>
+
+              <div>
+                <h2>شرح تجربه</h2>
+
+                <p>
+                  مراحل تجربه را طوری توضیح دهید که معلمان
+                  دیگر نیز بتوانند آن را اجرا کنند.
+                </p>
+              </div>
+            </div>
+
+            <div class="tlr-form-grid">
+              <div class="tlr-form-field tlr-form-field-full">
+                <label for="challenge">
+                  مسئله یا نیاز آموزشی
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <textarea
+                  id="challenge"
+                  name="challenge"
+                  rows="5"
+                  placeholder="چه مسئله‌ای در کلاس وجود داشت و چرا تصمیم گرفتید روش تازه‌ای امتحان کنید؟"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="tlr-form-field tlr-form-field-full">
+                <label for="implementation">
+                  روش اجرا
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <textarea
+                  id="implementation"
+                  name="implementation"
+                  rows="7"
+                  placeholder="مراحل اجرا، فعالیت‌ها، زمان موردنیاز و نقش دانش‌آموزان را توضیح دهید."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="tlr-form-field tlr-form-field-full">
+                <label for="result">
+                  نتیجه مشاهده‌شده
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <textarea
+                  id="result"
+                  name="result"
+                  rows="5"
+                  placeholder="پس از اجرای این تجربه چه تغییری در یادگیری، مشارکت یا رفتار دانش‌آموزان مشاهده کردید؟"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="tlr-form-field tlr-form-field-full">
+                <label for="tips">
+                  پیشنهاد برای سایر معلمان
+                </label>
+
+                <textarea
+                  id="tips"
+                  name="tips"
+                  rows="4"
+                  placeholder="چه نکاتی به اجرای بهتر این تجربه کمک می‌کند؟"
+                ></textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="tlr-form-section">
+            <div class="tlr-form-section-heading">
+              <span class="tlr-form-step">۴</span>
+
+              <div>
+                <h2>کلیدواژه‌ها و فایل‌ها</h2>
+
+                <p>
+                  اطلاعات تکمیلی به پیدا شدن و استفاده بهتر
+                  از تجربه کمک می‌کند.
+                </p>
+              </div>
+            </div>
+
+            <div class="tlr-form-grid">
+              <div class="tlr-form-field tlr-form-field-full">
+                <label for="keywords">
+                  کلیدواژه‌ها
+                </label>
+
+                <input
+                  id="keywords"
+                  name="keywords"
+                  type="text"
+                  placeholder="مثلاً یادگیری فعال، کار گروهی، ریاضی"
+                />
+
+                <small>
+                  کلیدواژه‌ها را با ویرگول از هم جدا کنید.
+                </small>
+              </div>
+
+              <div class="tlr-form-field tlr-form-field-full">
+                <label for="experience-file">
+                  تصویر یا فایل تکمیلی
+                </label>
+
+                <div class="tlr-file-upload">
+                  <input
+                    id="experience-file"
+                    name="experience-file"
+                    type="file"
+                    accept=".jpg,.jpeg,.png,.pdf"
+                  />
+
+                  <span class="tlr-file-upload-icon">
+                    ↑
+                  </span>
+
+                  <strong>
+                    فایل خود را انتخاب کنید
+                  </strong>
+
+                  <small>
+                    تصویر یا PDF، حداکثر ۱۰ مگابایت
+                  </small>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tlr-form-section">
+            <label class="tlr-form-confirmation">
+              <input
+                type="checkbox"
+                name="confirmation"
+                required
+              />
+
+              <span>
+                تأیید می‌کنم این تجربه براساس فعالیت واقعی
+                من در محیط آموزشی نوشته شده است.
+              </span>
+            </label>
+          </section>
+
+          <div class="tlr-form-actions">
+            <a
+              class="tlr-submit-cancel"
+              href="../experience-list/"
+            >
+              انصراف
+            </a>
+
+            <button
+              class="tlr-submit-draft"
+              type="button"
+            >
+              ذخیره پیش‌نویس
+            </button>
+
+            <button
+            class="tlr-submit-primary"
+            type="submit"
+            >
+            انتشار تجربه
+            <span aria-hidden="true">←</span>
+            </button>
+          </div>
+        </form>
+
+        <aside class="tlr-submit-sidebar">
+          <section class="tlr-submit-guide-card">
+            <span
+              class="tlr-guide-icon"
+              aria-hidden="true"
+            >
+              ✦
+            </span>
+
+            <h2>
+              یک تجربه خوب چه ویژگی‌هایی دارد؟
+            </h2>
+
+            <ul>
+              <li>
+                براساس یک موقعیت واقعی کلاس درس است.
+              </li>
+
+              <li>
+                مراحل اجرا را روشن و کاربردی توضیح می‌دهد.
+              </li>
+
+              <li>
+                نتیجه‌ها و محدودیت‌ها را صادقانه بیان می‌کند.
+              </li>
+
+              <li>
+                برای سایر معلمان قابل استفاده یا اقتباس است.
+              </li>
+            </ul>
+          </section>
+
+          <section class="tlr-submit-status-card">
+            <span class="tlr-status-label">
+              وضعیت فرم
+            </span>
+
+            <strong>
+            آماده انتشار
+            </strong>
+
+            <p>
+            پس از تکمیل فرم و انتخاب «انتشار تجربه»،
+            تجربه شما بلافاصله در فهرست تجربه‌ها نمایش داده می‌شود.
+            </p>
+          </section>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
