@@ -45,6 +45,16 @@
   align-items: start;
 }
 
+.tlr-content-layout > section {
+  grid-column: 1;
+  min-width: 0;
+}
+
+.tlr-content-layout > .tlr-sidebar {
+  grid-column: 2;
+  min-width: 0;
+}
+
 .tlr-section-header {
   margin-bottom: 16px;
 }
