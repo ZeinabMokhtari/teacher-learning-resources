@@ -177,3 +177,144 @@
     flex-direction: column;
   }
 }
+
+/* Enhanced experience cards */
+
+.tlr-experience-card {
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid rgba(8, 127, 115, 0.12);
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(248, 252, 253, 1) 100%
+    );
+
+  box-shadow: var(--tlr-shadow-soft);
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+.tlr-experience-card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 5px;
+
+  background: var(--tlr-gradient-feature);
+}
+
+.tlr-experience-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(100, 87, 217, 0.24);
+
+  box-shadow:
+    0 22px 48px rgba(26, 65, 78, 0.15);
+}
+
+.tlr-experience-header {
+  padding-top: 24px;
+}
+
+.tlr-avatar {
+  position: relative;
+
+  background: var(--tlr-gradient-feature);
+
+  box-shadow:
+    0 9px 20px rgba(100, 87, 217, 0.24);
+}
+
+.tlr-avatar::after {
+  content: "";
+
+  position: absolute;
+  inset: -4px;
+
+  border: 1px solid rgba(100, 87, 217, 0.2);
+  border-radius: 50%;
+}
+
+.tlr-author-name {
+  color: var(--tlr-color-text);
+  font-weight: 900;
+}
+
+.tlr-author-meta {
+  color: var(--tlr-color-text-soft);
+}
+
+.tlr-experience-title {
+  color: var(--tlr-color-text);
+  font-weight: 900;
+  line-height: 1.75;
+}
+
+.tlr-experience-summary {
+  color: var(--tlr-color-text-soft);
+  line-height: 2;
+}
+
+.tlr-experience-tags {
+  gap: 8px;
+}
+
+.tlr-experience-tag {
+  border: 1px solid rgba(8, 127, 115, 0.12);
+  border-radius: 999px;
+
+  background: var(--tlr-color-primary-light);
+  color: var(--tlr-color-primary-dark);
+
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.tlr-experience-tag:nth-child(2n) {
+  border-color: rgba(100, 87, 217, 0.14);
+
+  background: var(--tlr-color-secondary-light);
+  color: var(--tlr-color-secondary-dark);
+}
+
+.tlr-experience-tag:nth-child(3n) {
+  border-color: rgba(244, 183, 64, 0.18);
+
+  background: var(--tlr-color-accent-light);
+  color: var(--tlr-color-accent-dark);
+}
+
+.tlr-save-button {
+  border: 1px solid var(--tlr-color-border);
+  border-radius: 12px;
+
+  background: var(--tlr-color-surface);
+  color: var(--tlr-color-text-soft);
+
+  transition:
+    transform 180ms ease,
+    color 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.tlr-save-button:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(237, 106, 90, 0.28);
+
+  background: var(--tlr-color-coral-light);
+  color: var(--tlr-color-coral);
+}

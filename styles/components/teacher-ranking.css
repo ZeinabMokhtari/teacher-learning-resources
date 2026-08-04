@@ -95,3 +95,233 @@
   font-size: 0.75rem;
   font-weight: 800;
 }
+
+/* Enhanced teacher ranking */
+
+.tlr-teacher-ranking {
+  position: sticky;
+  top: 24px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(100, 87, 217, 0.14);
+  border-radius: 24px;
+
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(244, 183, 64, 0.16),
+      transparent 24%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f8f7ff 100%
+    );
+
+  box-shadow: var(--tlr-shadow-card);
+}
+
+.tlr-ranking-header {
+  position: relative;
+
+  padding: 22px 22px 18px;
+
+  border-bottom: 1px solid rgba(100, 87, 217, 0.1);
+}
+
+.tlr-ranking-header::after {
+  content: "";
+
+  position: absolute;
+  right: 22px;
+  bottom: 0;
+
+  width: 70px;
+  height: 4px;
+
+  border-radius: 999px;
+  background: var(--tlr-gradient-feature);
+}
+
+.tlr-ranking-title {
+  margin: 0;
+
+  color: var(--tlr-color-text);
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.tlr-ranking-description {
+  margin: 7px 0 0;
+
+  color: var(--tlr-color-text-soft);
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.tlr-ranking-list {
+  display: grid;
+  gap: 10px;
+
+  padding: 16px;
+}
+
+.tlr-ranking-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 34px 46px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+
+  padding: 12px;
+
+  border: 1px solid rgba(8, 127, 115, 0.08);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.84);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.tlr-ranking-item:hover {
+  transform: translateX(-4px);
+
+  border-color: rgba(100, 87, 217, 0.2);
+
+  box-shadow:
+    0 12px 24px rgba(26, 65, 78, 0.1);
+}
+
+.tlr-ranking-position {
+  display: grid;
+  place-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 10px;
+
+  background: var(--tlr-color-secondary-light);
+  color: var(--tlr-color-secondary-dark);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.tlr-ranking-item:nth-child(1) .tlr-ranking-position {
+  background: var(--tlr-gradient-reward);
+  color: #ffffff;
+
+  box-shadow:
+    0 7px 15px rgba(244, 183, 64, 0.25);
+}
+
+.tlr-ranking-item:nth-child(2) .tlr-ranking-position {
+  background: linear-gradient(135deg, #dfe7ee, #aab7c4);
+  color: #ffffff;
+}
+
+.tlr-ranking-item:nth-child(3) .tlr-ranking-position {
+  background: linear-gradient(135deg, #e7b27b, #bb7b45);
+  color: #ffffff;
+}
+
+.tlr-ranking-avatar {
+  display: grid;
+  place-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: 3px solid #ffffff;
+  border-radius: 14px;
+
+  background: var(--tlr-gradient-feature);
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 18px rgba(100, 87, 217, 0.2);
+}
+
+.tlr-ranking-avatar-icon {
+  width: 22px;
+  height: 22px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tlr-ranking-name {
+  margin: 0;
+
+  color: var(--tlr-color-text);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.tlr-ranking-meta {
+  margin: 3px 0 0;
+
+  color: var(--tlr-color-text-soft);
+  font-size: 0.72rem;
+}
+
+.tlr-ranking-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+
+  color: var(--tlr-color-secondary-dark);
+}
+
+.tlr-ranking-score strong {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.tlr-ranking-score span {
+  color: var(--tlr-color-text-soft);
+  font-size: 0.68rem;
+}
+
+.tlr-ranking-footer {
+  padding: 14px 18px 18px;
+
+  border-top: 1px solid rgba(100, 87, 217, 0.1);
+}
+
+.tlr-ranking-footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  padding: 10px 12px;
+
+  border-radius: 12px;
+
+  background: var(--tlr-color-secondary-light);
+  color: var(--tlr-color-secondary-dark);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-decoration: none;
+
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.tlr-ranking-footer a:hover {
+  transform: translateY(-2px);
+  background: #ddd9ff;
+}
